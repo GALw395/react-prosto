@@ -7,7 +7,8 @@ const App = () => {
     <div>
       <PageTitle title = {'Page title'} />
       
-      <Accordion title = {'Menu'}/>
+      <Accordion title = {'collapsed menu'} collapsed = {true}/>
+      <Accordion title = {'Menu'} collapsed = {false}/>
       <Rating value = {0}/>
       <Rating value = {1}/>
       <Rating value = {2}/>
@@ -19,7 +20,11 @@ const App = () => {
   );
 }
 
-const PageTitle = (props: any) => {
+type PageTitlePropsType = {
+  title: string
+}
+
+const PageTitle = (props: PageTitlePropsType) => {
   return <h1>{props.title}</h1>
 }
 

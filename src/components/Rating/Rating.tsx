@@ -1,5 +1,9 @@
 
-export const Rating = (props: any) => {
+type RatingPropsType = {
+    value: 0 | 1 | 2 | 3 | 4 | 5
+}
+
+export const Rating = (props: RatingPropsType) => {
 
     if (props.value === 1) {
         return (
@@ -62,17 +66,16 @@ export const Rating = (props: any) => {
 
 }
 
-const Star = (props: any) => {
+type StarPropsType = {
+    selected: boolean
+}
+
+const Star = (props: StarPropsType) => {
 
     if (props.selected === true) {
-        return (
-            <span><b>star </b></span>
-        )
-
+        return <span><b>star </b></span>
     } else {
-        return (
-            <span>star </span>
-        )
+        return <span>star </span>
     }
 
 

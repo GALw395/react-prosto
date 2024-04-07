@@ -1,24 +1,42 @@
 
-export const Accordion = (props: any) => {
-    return (
-      <div>
-        <AccordionTitle title = {props.title}/>
-        <AccordionBody />
-      </div>
-  
-    )
-  }
-  
-  const AccordionTitle = (props: any) => {
+type AccordionPropsType = {
+    title: string
+    collapsed: boolean
+}
+
+export const Accordion = (props: AccordionPropsType) => {
+    if (props.collapsed === true) {
+        return (
+            <div>
+                <AccordionTitle title={props.title} />
+                <div>collapsed</div>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                <AccordionTitle title={props.title} />
+                <AccordionBody />
+            </div>
+        )
+    }
+
+}
+
+type AccordionTitlePropsType = {
+    title: string
+}
+
+const AccordionTitle = (props: AccordionTitlePropsType) => {
     return <h3>{props.title}</h3>
-  }
-  
-  const AccordionBody = () => {
+}
+
+const AccordionBody = () => {
     return (
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
     )
-  }
+}
