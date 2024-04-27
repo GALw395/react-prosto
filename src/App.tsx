@@ -23,7 +23,6 @@ const App = () => {
       <Accordion title = {'Menu'}/>
 
       <Rating />
-      <Rating />
 
     </div>
   );
