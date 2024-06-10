@@ -3,6 +3,7 @@ import './App.css';
 import { Accordion } from './components/Accordion/Accordion';
 import { OnOff } from './components/OnOff/OnOff';
 import { Rating } from './components/Rating/Rating';
+import { InputComponent } from './components/InputComponent/InputComponent';
 
 
 
@@ -13,7 +14,6 @@ type PageTitlePropsType = {
 const PageTitle = (props: PageTitlePropsType) => {
   return <h1>{props.title}</h1>
 }
-
 
 const App = () => {
 
@@ -27,6 +27,8 @@ const App = () => {
       <Accordion title = {'Menu'}/>
 
       <Rating />
+
+      <InputComponent />
 
     </div>
   );
