@@ -19,13 +19,17 @@ const PageTitle = (props: PageTitlePropsType) => {
 const App = () => {
 
   let [on, setOn] = useState(false)
+  const onClick = (value: any) => {
+    console.log({value});
+    
+  }
 
   return (
     <div>      
 
       <OnOff value={on} onClick={setOn}/>
       <PageTitle title = {'Page title'} />
-      <Accordion title = {'Menu'}/>
+      <Accordion title = {'Menu'} onClick={onClick} item={[{title: "1", value: "you click on 1" }, {title: "2", value: "you click on 2"}, {title: "3", value: "you click on 3"}]}/>
 
       <Rating />
 
