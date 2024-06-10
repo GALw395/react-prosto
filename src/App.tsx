@@ -4,6 +4,7 @@ import { Accordion } from './components/Accordion/Accordion';
 import { OnOff } from './components/OnOff/OnOff';
 import { Rating } from './components/Rating/Rating';
 import { InputComponent } from './components/InputComponent/InputComponent';
+import { ControlInput } from './components/ControlInput/ControlInput';
 
 
 
@@ -29,6 +30,8 @@ const App = () => {
       <Rating />
 
       <InputComponent />
+
+      <ControlInput />
 
     </div>
   );
