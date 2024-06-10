@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import { Accordion } from './components/Accordion/Accordion';
 import { OnOff } from './components/OnOff/OnOff';
@@ -15,10 +16,13 @@ const PageTitle = (props: PageTitlePropsType) => {
 
 
 const App = () => {
+
+  let [on, setOn] = useState(false)
+
   return (
     <div>      
 
-      <OnOff />
+      <OnOff value={on} onClick={setOn}/>
       <PageTitle title = {'Page title'} />
       <Accordion title = {'Menu'}/>
 
