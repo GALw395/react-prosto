@@ -1,7 +1,7 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
 
-export const Rating = () => {
+const Rating1 = () => {
 
     let [value, setValue] = useState(0)
 
@@ -15,6 +15,8 @@ export const Rating = () => {
         </div>
     )
 }
+
+export const Rating = React.memo(Rating1)
 
 type StarPropsType = {
     selected: boolean

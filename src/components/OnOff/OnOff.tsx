@@ -1,3 +1,4 @@
+import React from "react"
 
 
 type onPropsType = {
@@ -6,7 +7,7 @@ type onPropsType = {
 }
 
 
-export const OnOff = (props: onPropsType) => {
+const OnOff1 = (props: onPropsType) => {
 
     
 
@@ -48,3 +49,5 @@ export const OnOff = (props: onPropsType) => {
     )
 
 }
+
+export const OnOff = React.memo(OnOff1)

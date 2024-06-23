@@ -1,4 +1,4 @@
-import { useReducer } from "react"
+import React, { useReducer } from "react"
 
 type AccordionPropsType = {
     title: string
@@ -40,7 +40,10 @@ const reduser =  (state: StateType, action: ActionType): StateType => {
 }
 
 
-export const AccordionReducer = (props: AccordionPropsType) => {
+
+
+
+ const AccordionReducer1 = (props: AccordionPropsType) => {
 
     // let [collapsed, setCollapsed] = useState(false)
     let [state, dispatch] = useReducer(reduser, { collapsed: false})
@@ -53,6 +56,8 @@ export const AccordionReducer = (props: AccordionPropsType) => {
             </div>
         )
 }
+
+export const AccordionReducer = React.memo(AccordionReducer1)
 
 
 
