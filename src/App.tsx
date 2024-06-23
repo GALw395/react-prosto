@@ -6,6 +6,7 @@ import { Rating } from './components/Rating/Rating';
 import { InputComponent } from './components/InputComponent/InputComponent';
 import { ControlInput } from './components/ControlInput/ControlInput';
 import { Select } from './components/Select/Select';
+import { AccordionReducer } from './components/AccordionReducer/AccordionReducer';
 
 
 
@@ -40,10 +41,21 @@ const App = () => {
       <ControlInput />
 
       <Select
-        item={[{value: '1', title: 'one'}, {value: '2', title: 'two'}, {value: '3', title: 'three'}]}
+        item={[{ value: '1', title: 'one' }, { value: '2', title: 'two' }, { value: '3', title: 'three' }]}
         onChange={setValue}
         value={value}
       />
+
+      <AccordionReducer
+        title={'Menu'}
+        onClick={onClick}
+        item={
+          [
+            { title: "1", value: "you click on 1" },
+            { title: "2", value: "you click on 2" },
+            { title: "3", value: "you click on 3" }
+          ]
+        } />
 
     </div>
   );
