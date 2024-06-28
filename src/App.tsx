@@ -7,6 +7,7 @@ import { InputComponent } from './components/InputComponent/InputComponent';
 import { ControlInput } from './components/ControlInput/ControlInput';
 import { Select } from './components/Select/Select';
 import { AccordionReducer } from './components/AccordionReducer/AccordionReducer';
+import { Example1 } from './components/Example1/Example1';
 
 
 
@@ -56,6 +57,9 @@ const App = () => {
             { title: "3", value: "you click on 3" }
           ]
         } />
+
+        <hr />
+        <Example1 />
 
     </div>
   );
