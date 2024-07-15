@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 import './App.css';
+import { UseEffect } from './components/UseEffect/UseEffect';
 // import { Accordion } from './components/Accordion/Accordion';
 // import { OnOff } from './components/OnOff/OnOff';
 // import { Rating } from './components/Rating/Rating';
@@ -8,7 +9,7 @@ import './App.css';
 // import { Select } from './components/Select/Select';
 // import { AccordionReducer } from './components/AccordionReducer/AccordionReducer';
 // import { Example1 } from './components/Example1/Example1';
-import { UseState } from './components/UseState/UseState';
+// import { UseState } from './components/UseState/UseState';
 
 
 
@@ -61,7 +62,8 @@ const App = () => {
 
         <hr />
         <Example1 /> */}
-        <UseState />
+        {/* <UseState /> */}
+        <UseEffect />
 
     </div>
   );
