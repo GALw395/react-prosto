@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useCallback, useMemo, useState } from "react"
 
 
 
@@ -22,6 +22,19 @@ export const Example1 = () => {
         }
         return tempResultA
     }, [a])
+
+    // let resaltA1 = useCallback(() => {
+    //     let tempResultA = 1
+    //     for (let i = 1; i <= a; i++) {
+    //         let fake = 0
+    //         while (fake < 10000000) {
+    //             fake++
+    //             const fakeValue = Math.random()
+    //         }
+    //         tempResultA = tempResultA * i
+    //     }
+    //     setA(tempResultA)
+    // }, [a])
 
 
     for (let i = 1; i <= b; i++) {

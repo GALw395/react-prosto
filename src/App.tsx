@@ -1,37 +1,38 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
-import { Accordion } from './components/Accordion/Accordion';
-import { OnOff } from './components/OnOff/OnOff';
-import { Rating } from './components/Rating/Rating';
-import { InputComponent } from './components/InputComponent/InputComponent';
-import { ControlInput } from './components/ControlInput/ControlInput';
-import { Select } from './components/Select/Select';
-import { AccordionReducer } from './components/AccordionReducer/AccordionReducer';
-import { Example1 } from './components/Example1/Example1';
+// import { Accordion } from './components/Accordion/Accordion';
+// import { OnOff } from './components/OnOff/OnOff';
+// import { Rating } from './components/Rating/Rating';
+// import { InputComponent } from './components/InputComponent/InputComponent';
+// import { ControlInput } from './components/ControlInput/ControlInput';
+// import { Select } from './components/Select/Select';
+// import { AccordionReducer } from './components/AccordionReducer/AccordionReducer';
+// import { Example1 } from './components/Example1/Example1';
+import { UseState } from './components/UseState/UseState';
 
 
 
-type PageTitlePropsType = {
-  title: string
-}
+// type PageTitlePropsType = {
+//   title: string
+// }
 
-const PageTitle = (props: PageTitlePropsType) => {
-  return <h1>{props.title}</h1>
-}
+// const PageTitle = (props: PageTitlePropsType) => {
+//   return <h1>{props.title}</h1>
+// }
 
 const App = () => {
 
-  let [on, setOn] = useState(false)
-  const onClick = (value: any) => {
-    console.log({ value });
+//   let [on, setOn] = useState(false)
+//   const onClick = (value: any) => {
+//     console.log({ value });
 
-  }
+//   }
 
-  const [value, setValue] = useState('2')
+//   const [value, setValue] = useState('2')
   return (
     <div>
 
-      <OnOff value={on} onClick={setOn} />
+      {/* <OnOff value={on} onClick={setOn} />
       <PageTitle title={'Page title'} />
       <Accordion title={'Menu'} onClick={onClick} item={[{ title: "1", value: "you click on 1" }, { title: "2", value: "you click on 2" }, { title: "3", value: "you click on 3" }]} />
 
@@ -59,7 +60,8 @@ const App = () => {
         } />
 
         <hr />
-        <Example1 />
+        <Example1 /> */}
+        <UseState />
 
     </div>
   );
