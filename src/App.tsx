@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 import './App.css';
-import { UseEffect } from './components/UseEffect/UseEffect';
+import { ResetEffectExample } from './components/UseEffect/ResetEffectExample';
+// import { Clock } from './components/Clock/Clock';
+// import { UseEffect } from './components/UseEffect/UseEffect';
 // import { Accordion } from './components/Accordion/Accordion';
 // import { OnOff } from './components/OnOff/OnOff';
 // import { Rating } from './components/Rating/Rating';
@@ -63,7 +65,10 @@ const App = () => {
         <hr />
         <Example1 /> */}
         {/* <UseState /> */}
-        <UseEffect />
+        {/* <UseEffect /> */}
+        {/* <Clock mode='digital'/>
+        <Clock mode='analog'/> */}
+        <ResetEffectExample />
 
     </div>
   );
